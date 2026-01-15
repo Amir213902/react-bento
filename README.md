@@ -1,10 +1,10 @@
 # Тестовое задание
 
 ## Технический стэк:
-React
-React-Router-Dom
-react-grid-layout
-react-icons
+- React
+- React-Router-Dom
+- React-grid-layout
+- React-icons
 
 ## Что нужно чтобы запустить?
 Установленный на вашем компьютере Node Js
