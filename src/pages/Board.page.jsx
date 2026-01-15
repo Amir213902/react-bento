@@ -1,9 +1,17 @@
 import MyGrid from '../components/MyGrid'
+import MyResponsiveGrid from '../components/MyResponsiveGrid'
+import Device from 'device.js'
+
+const deviceInfo = new Device()
 
 function BoardPage() {
 
     return (
-        <MyGrid />
+        deviceInfo.desktop ? (
+            <MyGrid />
+        ) : (
+            <MyResponsiveGrid />
+        )
     )
 }
 
