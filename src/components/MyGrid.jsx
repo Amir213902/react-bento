@@ -2,18 +2,19 @@ import { useEffect, useState } from 'react';
 import ReactGridLayout, { useContainerWidth } from 'react-grid-layout';
 import "./style.css";
 import BlockUI from './UI/Block.ui';
-import { twitterBlock, whatsappBlock, XTwitterBlock, youtubeBlock } from '../constants/constsBlocks';
+import { instagramBlock, twitterBlock, whatsappBlock, XTwitterBlock, youtubeBlock } from '../constants/constsBlocks';
 import { GrPowerReset } from 'react-icons/gr';
 
 export default function MyGrid() {
   const { width, containerRef, mounted } = useContainerWidth();
 
-  /* Стартовая конфигурация каждого из блоков */
+  /* Стартовая конфигурация позиции и размер каждого из блоков */
   const originalLayout = [
     { i: "a", x: 0, y: 0, w: 6, h: 4, minW: 2, maxW: 6, minH: 2, maxH: 6 },
     { i: "b", x: 6, y: 0, w: 4, h: 2, minW: 2, maxW: 6, minH: 2, maxH: 6 },
     { i: "c", x: 12, y: 0, w: 2, h: 3, minW: 2, maxW: 6, minH: 2, maxH: 6 },
     { i: "d", x: 0, y: 4, w: 2, h: 2, minW: 2, maxW: 6, minH: 2, maxH: 6 },
+    { i: "e", x: 6, y: 6, w: 4, h: 2, minW: 2, maxW: 6, minH: 2, maxH: 6 },
   ];
 
 
@@ -73,6 +74,11 @@ export default function MyGrid() {
             <div key={'d'}>
               <BlockUI block={youtubeBlock}></BlockUI>
             </div>
+
+            <div key={'e'}>
+              <BlockUI block={instagramBlock}></BlockUI>
+            </div>
+
 
           </ReactGridLayout>
         )}

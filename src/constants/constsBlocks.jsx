@@ -1,4 +1,4 @@
-import { FaTwitter, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export const youtubeBlock = {
@@ -25,7 +25,7 @@ export const whatsappBlock = {
     className: 'whatsapp',
     icon: <FaWhatsapp />,
     backgroundIconColor: '#3dff67',
-    backgroundColor: '#9efeb3',
+    backgroundColor: '#cbffd6',
     btnColor: '#3dff67',
     undertitle: 'Whatsapp',
     hreftitle: 'Send Message',
@@ -39,5 +39,15 @@ export const XTwitterBlock = {
     backgroundColor: "#c8c8c8",
     btnColor: '#000000',
     undertitle: 'Ilon Mask?',
+    hreftitle: 'Follow',
+}
+
+export const instagramBlock = {
+    className: 'instagram',
+    icon: <FaInstagram />,
+    backgroundIconColor: 'linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7)',
+    backgroundColor: 'linear-gradient(115deg, #f9ce348b, #ee2a7b8b, #6228d78b)',
+    btnColor: '#5a08ff',
+    undertitle: 'Instagram',
     hreftitle: 'Follow',
 }
